@@ -3,15 +3,11 @@ package hello1;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
-@ManagedBean
+@ManagedBean(name="user")
 @RequestScoped
 public class Hello {
 
 	private String name;
-	
-	public Hello() {
-		
-	}
 	
 	public String getName() {
 		return name;
